@@ -3,7 +3,12 @@ img{
     max-height: 100%
 }
 
-.resize {
+.imglinks{
+    width: auto;
+    height: 100px;
+}
+
+.resize{
     width: auto;
     height: 200px;
 }

@@ -31,8 +31,8 @@
                     <a class="nav-link" href="index.html">Summary <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         Plots
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -60,7 +60,7 @@
                         <h5 class="card-title">Summary: Latitude vs. X</h5>
                         <hr>
                         <p class="card-text"><img src="assets/maxtemp.png"
-                                alt="A scatter plot showing how latitude effects max temperatures" alight="left"
+                                alt="A scatter plot showing how latitude effects max temperatures" float="left"
                                 class="resize">The purpose of this project was to analyze how weather changes as you get
                             closer to the equator. To accomplish this analysis, we first pulled data from the
                             OpenWeatherMap API to assemble a data set on over 500 cities.<br>
@@ -77,8 +77,28 @@
                     <div class="card-body">
                         <h5 class="card-title">Visualizations</h5>
                         <hr>
-                        <img src="assets/cloudiness.png" class="resize"><img src="assets/humidity.png" class="resize"><br>
-                        <img src="assets/maxtemp.png" class="resize"><img src="assets/windspeed.png" class="resize">
+                        <table cellspacing="5px" style="border-spacing: 10px;">
+                            <tr>
+                                <td>
+                                    <a href="plots/cloudiness.html">
+                                        <img src="assets/cloudiness.png"
+                                            alt="scatter plot showing latitude vs cloudiness" class="imglinks">
+                                    </a>
+                                </td>
+                                <td><a href="plots/humidity.html"><img src="assets/humidity.png"
+                                            alt="scatter plot showing latitude vs humidity" class="imglinks"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="plots/maxtemp.html"><img src="assets/maxtemp.png"
+                                            alt="scatter plot showing max temp vs latitude" class="imglinks"></a>
+                                </td>
+                                <td><a href="plots/windspeed.html"><img src="assets/windspeed.png"
+                                            alt="scatter plot showing windspeed vs latitude" class="imglinks"></a>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
