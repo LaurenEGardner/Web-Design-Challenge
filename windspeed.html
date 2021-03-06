@@ -22,19 +22,19 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Summary <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Summary</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
-                        Plots
+                        Plots <span class="sr-only">(current)</span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
                         <a class="dropdown-item" href="humidity.html">Humidity</a>
                         <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                        <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                        <a class="dropdown-item active" href="windspeed.html">Wind Speed</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -52,12 +52,12 @@
             <div class="col-sm-7">
                 <div class="card bg-light mb-3">
                     <div class="card-body">
-                        <h5 class="card-title text-info">Summary: Latitude vs. X</h5>
+                        <h5 class="card-title text-info">Latitude vs. Wind Speeds</h5>
                         <hr>
 
-                        <p class="card-text"><img src="assets/maxtemp.png"
-                                alt="A scatter plot showing how latitude effects max temperatures"
-                                style="width:50%;float:left;">The purpose of this project was to analyze how weather
+                        <p class="card-text"><img src="assets/windspeed.png"
+                                alt="A scatter plot showing how latitude effects wind speed"
+                                style="width:100%;float:left;">The purpose of this project was to analyze how weather
                             changes as you get
                             closer to the equator. To accomplish this analysis, we first pulled data from the
                             OpenWeatherMap API to assemble a data set on over 500 cities.<br>
@@ -79,7 +79,7 @@
                                 <td>
                                     <a href="cloudiness.html">
                                         <img src="assets/cloudiness.png"
-                                            alt="scatter plot showing latitude vs cloudiness" style="width:100%" class="border border-info">
+                                            alt="scatter plot showing latitude vs cloudiness" style="width:100%">
                                     </a>
                                 </td>
                                 <td><a href="humidity.html"><img src="assets/humidity.png"
@@ -92,7 +92,7 @@
                                             alt="scatter plot showing max temp vs latitude" style="width:100%"></a>
                                 </td>
                                 <td><a href="windspeed.html"><img src="assets/windspeed.png"
-                                            alt="scatter plot showing windspeed vs latitude" style="width:100%"></a>
+                                            alt="scatter plot showing windspeed vs latitude" style="width:100%" class="border border-info"></a>
                                 </td>
                             </tr>
                         </table>
