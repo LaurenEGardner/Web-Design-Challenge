@@ -49,56 +49,37 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-7">
-                <div class="card bg-light mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title text-info">Summary: Latitude vs. X</h5>
-                        <hr>
-
-                        <p class="card-text"><img src="assets/maxtemp.png"
-                                alt="A scatter plot showing how latitude effects max temperatures"
-                                style="width:50%;float:left;">The purpose of this project was to analyze how weather
-                            changes as you get
-                            closer to the equator. To accomplish this analysis, we first pulled data from the
-                            OpenWeatherMap API to assemble a data set on over 500 cities.<br>
-                            After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs
-                            latitude. Factors we looked at included temperature, cloudiness, wind speed, and humidity.
-                            This site provides the source data and visualizations created as part of the analysis, as
-                            well as explanations and descriptions of any trends and correlations witnessed.
-                        </p>
-                    </div>
+          <div class="col-sm-4 bg-light mb-3">
+            <div class="box">
+              <h3 class= "text-info">vs Max Temperature</h3>
+              <a href="maxtemp.html"><img src="assets/maxtemp.png"
+                alt="scatter plot showing latitude vs maxtemp" style="width:100%"></a>
+            </div>
+        </div>
+            <div class="col-sm-4 bg-light mb-3">
+                <div class="box">
+                  <h3 class= "text-info">vs Humidity</h3>
+                  <a href="humidity.html"><img src="assets/humidity.png"
+                    alt="scatter plot showing latitude vs humidity" style="width:100%"></a>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card bg-light mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title text-info">Visualizations</h5>
-                        <hr>
-                        <table cellspacing="5px" style="border-spacing: 10px;">
-                            <tr>
-                                <td>
-                                    <a href="cloudiness.html">
-                                        <img src="assets/cloudiness.png"
-                                            alt="scatter plot showing latitude vs cloudiness" style="width:100%" class="border border-info">
-                                    </a>
-                                </td>
-                                <td><a href="humidity.html"><img src="assets/humidity.png"
-                                            alt="scatter plot showing latitude vs humidity" style="width:100%"></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="maxtemp.html"><img src="assets/maxtemp.png"
-                                            alt="scatter plot showing max temp vs latitude" style="width:100%"></a>
-                                </td>
-                                <td><a href="windspeed.html"><img src="assets/windspeed.png"
-                                            alt="scatter plot showing windspeed vs latitude" style="width:100%"></a>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4 bg-light mb-3">
+                <div class="box">
+                  <h3 class="text-info">vs Cloudiness</h3>
+                  <a href="cloudiness.html"><img src="assets/cloudiness.png"
+                    alt="scatter plot showing latitude vs cloudiness" style="width:100%"></a>
                 </div>
             </div>
+                <div class="col-sm-4 bg-light mb-3">
+                    <div class="box">
+                      <h3 class= "text-info">vs Wind Speed</h3>
+                      <a href="windspeed.html"><img src="assets/windspeed.png"
+                        alt="scatter plot showing latitude vs wind speed" style="width:100%"></a>
+                    </div>
+                </div>
+                </div>
         </div>
     </div>
 
